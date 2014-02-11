@@ -2,7 +2,7 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    buildToolsVersion '19.0.1'
 
     defaultConfig {
         minSdkVersion 7
@@ -20,4 +20,6 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
+    compile files('src/lib/http-request-3.0.jar')
+    compile files('src/lib/gson-2.2.4.jar')
 }
